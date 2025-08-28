@@ -1,0 +1,120 @@
+/* style.css */
+@import "./header-nav.css";
+@import "./section-aboutme.css";
+@import "./section-projects.css";
+@import "./section-blog.css";
+@import "./section-references.css";
+@import "./section-contact.css";
+@import "./section-socialnetworks.css";
+
+/* Importación de fuentes elegantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Variables globales */
+:root {
+  --main-bg-color: #f4eefc;
+  --secondary-bg-color: #e8daf9;
+  --accent-color: #a77cd8;
+  --light-lilac: #ecdff6;
+  --medium-lilac: #c9a3e5;
+  --deep-lilac: #8c5dc5;
+  --text-color: #333;
+  --title-font: 'Playfair Display', serif;
+  --body-font: 'Poppins', sans-serif;
+}
+
+/* Estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  border: none;
+}
+
+p {
+  font-family: var(--body-font);
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Contenedor general de secciones */
+section {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Centrado general para secciones */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Estilo de selección global */
+::selection {
+  background-color: var(--deep-lilac);
+  color: var(--main-bg-color); 
+}
+
+
+/* Botón hamburguesa */
+.burger-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--deep-lilac);
+  display: none;
+}
+
+/* Mostrar menú hamburguesa en móviles */
+@media (max-width: 768px) {
+  .burger-btn {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+   nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.nav-open {
+    display: flex;
+  }
+}

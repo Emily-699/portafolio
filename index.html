@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Emily</title>
+
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <!-- Navegación Principal -->
+  <header id="header">
+    <div class="container">
+      <h1>Portafolio</h1>
+      <nav>
+        <a href="#section-aboutme">Sobre Mí</a>
+        <a href="#section-projects">Proyectos</a>
+        <a href="#section-blog">Blog</a>
+        <a href="#section-contact">Contacto</a>
+        <a href="#section-socialnetworks">Redes sociales</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- SOBRE MÍ -->
+    <section id="section-aboutme" class="section-container">
+      <div class="container">
+        <h2>Sobre Mí</h2>
+        <div class="about-container">
+          <img src="./assets/yo.jpg" width="300 height=" 200 alt="foto mia">
+          <div class="about-description">
+            <h3> Emily Fabiana Villarreal Parra</h3>
+            <p><b></b>Soy una Estudiante Apasionada por la tecnologia y el desarrollo, me encuentro realizando un curso
+              de ingles, un tecnico en operaciones de comercio exterior, tambien estoy en la universidad estudiando
+              negocios internacionales, y me encuentro en el proceso de aprendizaje de creacion y desarrollo de
+              software.
+            </p>
+          </div>
+          <div class="skills">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="section-projects" class="section-container">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div id="container-projects">
+
+          <div class="card-project">
+            <img src="./assets/portafolio.PNG" alt="Captura de Portafolio Web" />
+            <h3>Portafolio Web</h3>
+            <p>Mi primera Página web creada con HTML y CSS.</p>
+            <a href="https://emily-699.github.io/portafolio-emily/" target="_blank">Ver proyecto</a>
+          </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="section-blog" class="section-container">
+      <div class="container">
+        <div class="blog-header">
+          <h2>Blog</h2>
+          <div id="container-blog">
+            <div class="card-blog">
+              <h3>¿Cómo aprendí HTML y CSS?</h3>
+              <p>En esta entrada cuento mi experiencia aprendiendo desarrollo web desde cero, usando recursos gratuitos
+                en línea.</p>
+              <a href="#">Leer más</a>
+            </div>
+
+            <div class="card-blog">
+              <h3>Mis herramientas favoritas</h3>
+              <p>Descubre qué editores, extensiones y trucos me han ayudado a crear proyectos más rápido y con mejor
+                diseño.</p>
+              <a href="#">Leer más</a>
+            </div>
+
+            <div class="card-blog">
+              <h3>Errores que cometí al iniciar</h3>
+              <p>Un repaso honesto por los errores más comunes que cometí en mis primeros proyectos... y cómo los
+                resolví.</p>
+              <a href="#">Leer más</a>
+            </div>
+
+            <div class="blog-list">
+              <!-- Entradas del blog -->
+            </div>
+          </div>
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="section-contact" class="section-container">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+          <label for="inpt-nombreUsuario">Nombre:</label>
+          <input type="text" name="nombreUsuario" id="inpt-nombreUsuario" required />
+
+          <label for="inpt-correoUsuario">Correo electrónico:</label>
+          <input type="email" name="correoUsuario" id="inpt-correoUsuario" required />
+
+          <label for="inpt-asunto">Asunto:</label>
+          <input type="text" name="asunto" id="inpt-asunto" required />
+
+          <label for="inpt-descripcion">Descripción:</label>
+          <textarea name="descripcion" id="inpt-descripcion" rows="5" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+  <!-- REDES SOCIALES -->
+  <section id="section-socialnetworks" class="section-socialnetworks">
+    <div class="container">
+      <h2>Redes sociales</h2>
+      <footer>
+        <ul>
+          <li><a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=kw0xrmn">Instagram</a></li>
+          <li><a href="https://www.facebook.com/share/16tWFQkLJ6/">Faceboock</a></li>
+          <li><a href="https://www.tiktok.com/@emilyvilla26?_t=ZS-8zCx2tLFMNb&_r=1">TikTok</a></li>
+        </ul>
+        <p>Copyright 2025 Emily Villarreal</p>
+      </footer>
+
+      <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>

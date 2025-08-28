@@ -1,0 +1,61 @@
+/* section-blog.css */
+
+#section-blog h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--deep-lilac);
+  margin-bottom: 1.5rem;
+  text-decoration-color: var(--deep-lilac);
+  text-underline-offset: 6px;
+}
+
+#container-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.card-blog {
+  background-color: var(--light-lilac);
+  border: 1px solid var(--medium-lilac);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-blog:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-blog h3 {
+  font-family: var(--title-font);
+  color: var(--deep-lilac);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.card-blog p {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.card-blog a {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: var(--deep-lilac);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card-blog a:hover {
+  background-color: var(--medium-lilac);
+}

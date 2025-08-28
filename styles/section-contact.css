@@ -1,0 +1,67 @@
+#section-contact {
+  padding: 1.5rem ;
+  background-color: var(--light-lilac);
+}
+
+#section-contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--medium-lilac);
+}
+
+#section-contact h2 {
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--deep-lilac);
+  margin-bottom: 2rem;
+  text-underline-offset: 6px;
+  text-decoration-color: var(--deep-lilac);
+}
+
+#section-contact form {
+  display: grid;
+  gap: 1.2rem;
+}
+
+#section-contact label {
+  font-family: var(--body-font);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+#section-contact input,
+#section-contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--medium-lilac);
+  font-family: var(--body-font);
+  background-color: #fefeff;
+  color: var(--text-color);
+}
+
+#section-contact textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#section-contact button {
+  background-color: var(--deep-lilac);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: var(--title-font);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#section-contact button:hover {
+  background-color: #8d6aa5;
+}

@@ -1,0 +1,69 @@
+#section-socialnetworks {
+  background-color: var(--light-lilac);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+#section-socialnetworks .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#section-socialnetworks h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--deep-lilac);
+  margin-bottom: 1.5rem;
+  text-decoration-color: var(--deep-lilac);
+  text-underline-offset: 6px;
+}
+
+#section-socialnetworks footer {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid var(--medium-lilac);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#section-socialnetworks ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+#section-socialnetworks li a {
+  text-decoration: none;
+  font-family: var(--body-font);
+  color: var(--deep-lilac);
+  font-weight: 500;
+  position: relative;
+}
+
+#section-socialnetworks li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--deep-lilac);
+  bottom: -4px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#section-socialnetworks li a:hover::after {
+  transform: scaleX(1);
+}
+
+#section-socialnetworks p {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}

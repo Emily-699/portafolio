@@ -1,0 +1,76 @@
+/* section-projects.css */
+
+#section-projects h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--deep-lilac);
+  margin-bottom: 1.5rem;
+  text-decoration-color: var(--deep-lilac);
+  text-underline-offset: 6px;
+}
+
+#container-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+}
+
+.card-project {
+  background-color: var(--light-lilac);
+  box-shadow: 0 4px 12px rgba(140, 93, 197, 0.2); /* sombra suave lila */
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-project:hover {
+  box-shadow: 0 8px 24px rgba(140, 93, 197, 0.3);
+  transform: translateY(-8px);
+}
+
+.card-project img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-project h3 {
+  font-family: var(--title-font);
+  color: var(--deep-lilac);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-project p {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Botón "Ver más" */
+.card-project a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--deep-lilac);
+  color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-project a:hover {
+  background-color: var(--medium-lilac);
+  transform: scale(1.05);
+}

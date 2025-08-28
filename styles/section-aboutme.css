@@ -1,0 +1,85 @@
+/* section-aboutme.css */
+
+#section-aboutme h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  color: var(--deep-lilac);
+  margin-bottom: 1.5rem;
+  text-decoration-color: var(--deep-lilac);
+  text-underline-offset: 6px;
+}
+
+/* Sección principal */
+#section-aboutme {
+  background-color: var(--light-lilac);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Contenedor en grid para imagen, texto y habilidades */
+.about-container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Imagen de perfil */
+.about-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--medium-lilac);
+}
+
+/* Texto descriptivo */
+.about-container p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding: 0 1rem;
+}
+
+/* Lista de habilidades */
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.skills li {
+  background-color: var(--medium-lilac);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  padding: 6px 1rem;
+  font-size: 0.95rem;
+}
+
+/* Efecto al seleccionar texto */
+.skills li::selection {
+  background-color: var(--deep-lilac);
+  color: var(--main-bg-color);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-container p {
+    padding: 0;
+  }
+}
+
