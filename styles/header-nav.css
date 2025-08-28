@@ -71,6 +71,6 @@ main {
 /* En pantallas pequeñas, el header es más pequeño */
 @media (max-width: 768px) {
   main {
-    margin-top: 20rem;
+    margin-top: 10rem;
   }
 }
