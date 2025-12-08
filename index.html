@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Emily Portfolio</title>
 
-  <!-- Google Fonts: serif para headings (luxury) + sans para cuerpo -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/header-nav.css">
   <link rel="stylesheet" href="styles/section-about.css">
@@ -23,35 +22,28 @@
   <!-- NAV -->
   <header>
     <nav>
-      <!-- Logo SVG minimal (pegar SVG tal cual debajo o mantenerlo como <img> si prefieres) -->
       <div class="nav-left">
-        <!-- Inline SVG logo minimal -->
-        <a href="#about" class="nav-logo" aria-label="Emily Villarreal - Home">
-          <img src="assets/logo.svg.png" alt="Logo de Emily Villarreal" class="logo-img">
+        <!-- Logo -->
+        <a href="#sobre-mi" class="nav-logo" aria-label="Emily Villarreal - Home">
+          <img src="assets/logo.svg" alt="Logo de Emily Villarreal" class="logo-img">
         </a>
-
-
-        <!-- Nombre en serif para look luxury -->
-        <a class="brand-text" href="#about">Emily Villarreal</a>
+        <a class="brand-text" href="#sobre-mi">Emily Villarreal</a>
       </div>
 
       <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
 
       <div class="nav-right">
-        <!-- Theme toggle -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
         <div class="menu-btn" id="menu-btn">☰</div>
       </div>
     </nav>
   </header>
 
-
-
-
+  <!-- MAIN -->
   <main>
     <section id="sobre-mi" class="section-container">
       <div class="container">
@@ -59,6 +51,7 @@
         <p>Soy Emily, estudiante de Negocios Internacionales con una fuerte orientación hacia la moda, el Fashion
           Business y el desarrollo tecnológico aplicado a los negocios. Me apasiona conectar estrategia, creatividad y
           tecnología para crear soluciones modernas en comercio internacional, branding y experiencias digitales.</p>
+
         <p>Mi objetivo es desarrollarme profesionalmente en industrias globales, especialmente moda y lujo, integrando
           habilidades de análisis, operaciones y herramientas digitales.</p>
 
@@ -93,18 +86,17 @@
           <li>
             <b>Proyecto 1:</b> Análisis de mercado internacional para marca de moda<br>
             <b>Rol:</b> Analista<br>
-            <b>Descripción:</b> Investigación sobre oportunidades de entrada de moda colombiana al mercado francés.<br>
             <b>Resultados:</b> Segmentos clave identificados.
           </li>
+
           <li>
             <b>Proyecto 2:</b> Landing Page Personal (VS Code + GitHub Pages)<br>
             <b>Rol:</b> Desarrolladora<br>
-            <b>Descripción:</b> Portafolio moderno con HTML/CSS/JS.<br>
             <b>Resultados:</b> Sitio responsive.
           </li>
+
           <li>
-            <b>Proyecto 3:</b> Prototipo React (en progreso)<br>
-            <b>Rol:</b> Desarrolladora
+            <b>Proyecto 3:</b> Prototipo React (en progreso)
           </li>
         </ul>
 
@@ -133,6 +125,12 @@
         <p>Email:<br>WhatsApp:<br>Ciudad: Colombia</p>
       </div>
     </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section-container"></section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section-container"></section>
   </main>
 
   <section id="social" class="section-socialnetworks">
